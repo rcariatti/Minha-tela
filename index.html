@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minha TV</title>
+<style>
+:root{color-scheme:dark;--bg:#07080c;--panel:#191c25;--muted:#aeb5c7;--white:#f6f7fb}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 0%,#202633 0%,#0b0d13 44%,var(--bg) 78%);color:var(--white);font:16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:26px 4vw;color:#dce2f1;font-size:clamp(14px,1.4vw,22px);letter-spacing:.08em}
+.brand{font-weight:700}.brand span{font-weight:300;color:#aab4c8;margin-left:18px}
+main{padding:0 4vw 48px}.hero{min-height:250px;border-radius:24px;padding:34px;display:flex;align-items:end;background:linear-gradient(90deg,rgba(5,6,10,.95),rgba(5,6,10,.55)),linear-gradient(135deg,#282c38,#101116 60%,#6c1727);box-shadow:0 20px 55px #0007}
+.eyebrow{color:#c3cada;font-size:14px}.hero h1{font-size:clamp(34px,5vw,64px);margin:8px 0}.hero p{color:#c4cad8;margin:0 0 20px}.pill{display:inline-block;background:#e7eaf3;color:#151821;border-radius:30px;padding:12px 20px;text-decoration:none;font-weight:700}
+section{margin-top:28px}h2{font-size:clamp(18px,2vw,27px);margin:0 0 14px}.tiles{display:grid;grid-template-columns:repeat(7,minmax(100px,1fr));gap:12px}.tile{min-height:100px;border:1px solid #ffffff16;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-decoration:none;color:white;background:linear-gradient(145deg,#242936,#11131a);font-weight:650;transition:transform .15s,outline .15s}.tile:focus,.tile:hover{outline:3px solid #e6eaf5;transform:scale(1.025)}.emoji{font-size:clamp(24px,3vw,38px)}.red{background:linear-gradient(135deg,#ff355e,#fb7b28)}.blue{background:linear-gradient(135deg,#087cf0,#163c9d)}.black{background:#050506}.purple{background:linear-gradient(135deg,#5836ff,#1610a8)}.note{color:var(--muted);font-size:13px;margin-top:24px}
+@media(max-width:800px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{min-height:200px;padding:24px}header{padding:20px 4vw}}
+</style>
+</head>
+<body>
+<header><div class="brand">MINHA TV <span>• VIDAA</span></div><div id="clock">● ONLINE</div></header>
+<main>
+<div class="hero"><div><div class="eyebrow">SUA CENTRAL DE ENTRETENIMENTO</div><h1>Boa noite.</h1><p>Tudo o que você gosta, em um só lugar.</p><a class="pill" href="#apps">Explorar aplicativos ↓</a></div></div>
+<section id="apps"><h2>Seus aplicativos</h2><div class="tiles">
+<a class="tile red" href="https://globoplay.globo.com/"><span class="emoji">▶</span>Globoplay</a>
+<a class="tile" href="https://www.youtube.com/"><span class="emoji">▶️</span>YouTube</a>
+<a class="tile black" href="https://www.netflix.com/"><span class="emoji">N</span>Netflix</a>
+<a class="tile blue" href="https://www.primevideo.com/"><span class="emoji">▶</span>Prime Video</a>
+<a class="tile" href="https://www.disneyplus.com/"><span class="emoji">✦</span>Disney+</a>
+<a class="tile purple" href="https://www.max.com/"><span class="emoji">M</span>Max</a>
+<a class="tile" href="https://tv.apple.com/"><span class="emoji"></span>Apple TV</a>
+</div></section>
+<section><h2>Entradas e jogos</h2><div class="tiles" style="grid-template-columns:repeat(4,minmax(100px,1fr))">
+<a class="tile" href="#apps"><span class="emoji">🎮</span>PS5</a>
+<a class="tile" href="#apps"><span class="emoji">▣</span>HDMI 1</a>
+<a class="tile" href="#apps"><span class="emoji">▣</span>HDMI 2</a>
+<a class="tile" href="#apps"><span class="emoji">📺</span>TV ao vivo</a>
+</div></section>
+<p class="note">Protótipo visual independente. Os atalhos abrem sites no navegador; não iniciam automaticamente apps instalados nem mudam as entradas HDMI. Para voltar à TV, use o botão Início do controle.</p>
+</main>
+</body></html>
